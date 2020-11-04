@@ -1,0 +1,54 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.comments {
+    width: 400px;
+}
+
+.comments .comment {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.comments .comment p {
+    margin: 0 0 10px 0;
+}
+
+.bubbleleft {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    color: #222;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.bubbleright {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    color: #222;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.bubbleleft::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent #fff transparent transparent  ;
+    left: -20px;
+    top: 10px;
+}
+
+.bubbleright::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent transparent #fff ;
+    right: -20px;
+    top: 20px;
+}
