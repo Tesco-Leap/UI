@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <body id="demo">
+        <div>
+            <h2 id="demo2" style="color: blue;">Background color - White</h2>
+            <br>
+            <br>
+            <button onclick="turnColorToRed()" style="color: red;">Red</button>
+            <button onclick="turnColorToBlack()" style="color: black;">Black</button>
+            <button onclick="turnColorToYellow()" style="color: yellow;">Yellow</button>
+        </div>
+    </body>
+    <script>
+        function turnColorToRed() {
+            document.getElementById("demo").style.backgroundColor = "red";
+            document.getElementById("demo2").innerHTML = "Background color - Red";
+        }
+
+        function turnColorToBlack() {
+            document.getElementById("demo").style.backgroundColor = "black";
+            document.getElementById("demo2").innerHTML = "Background color - Black";
+        }
+
+        function turnColorToYellow() {
+            document.getElementById("demo").style.backgroundColor = "yellow";
+            document.getElementById("demo2").innerHTML = "Background color - Yellow";
+        }
+    </script>
+</html>
