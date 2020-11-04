@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            a:link {
+                color: green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        _blank - Opens the document in a new window or tab
+        <a href="https://www.tesco.com/" target="_blank">Visit Tesco page in blank mode</a>
+        <br>
+        _parent - Opens the document in the parent frame
+        <a href="https://www.tesco.com/" target="_parent">Visit Tesco page in parent mode</a>
+        <br>
+        _top - Opens the document in the full body of the window
+        <a href="https://www.tesco.com/" target="_top">Visit Tesco page in Top mode</a>
+
+        <br>
+        <br>
+        Image as link
+        <br>
+        <a href="https://www.tesco.com">
+            <img src="./images/tesco.jpeg" alt="Tesco" style="width:42px;height:42px;">
+        </a>
+
+        <br>
+        <br>
+        Link to mail address
+        <br>
+        <a href="mailto:kishankumargupta823@gmail.com"> Send Email</a>
+
+        <br>
+        <br>
+        Button as a Link
+        <br>
+        <button onclick="document.location='https://www.tesco.com'">Tesco page</button>
+
+        <br>
+        <br>
+        The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+        <br>
+        <a href="https://www.tesco.com" title="Link to tesco">Visit tesco page with a tooltip</a>
+
+        <br>
+        <br>
+        Create a Bookmark in HTML
+        <br>
+        <li>Use the id attribute (id="value") to define bookmarks in a page</li>
+        <li>Use the href attribute (href="#value") to link to the bookmark</li>
+        <h2 id="C4">Chapter 4</h2>
+        <br>
+        <a href="#C4">Jump to Chapter 4</a>
+        <br>
+        <a href="Paragraphs.html#C4" target="_blank">Jump to paragraphs page chapter 4</a>
+
+
+    </body>
+</html>
