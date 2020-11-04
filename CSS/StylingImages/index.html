@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #demo1 {
+                margin: 10px;
+                border: 10px solid #ddd;
+                border-radius: 14px;
+                padding: 5px;
+                /* width: 150px; */
+            }
+
+            #demo1:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+
+            #demo2 {
+                margin: 10px;
+                border-radius: 50%;
+            }
+
+            #demo3 {
+                opacity: 0.3;
+                max-width: 100%;
+                max-height: 100%;
+                /* width: 50%; */
+            }
+
+            .container {
+                position: relative;
+                width: 350px;
+                height: 350px; 
+            }
+
+            .center {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 18px;
+            }
+
+            div.container1 {
+                text-align: center;
+                padding: 10px 20px;
+            }
+            
+            div.polaroid {
+                width: 350px;
+                height: 350px; 
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                vertical-align: middle;
+            }
+
+            .polaimage {
+                max-width: 80%;
+                max-height: 80%;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../../HTML/images/workplace.jpg" alt="Laptop image" id="demo1">
+        <img src="../../HTML/images/workplace.jpg" alt="Laptop image" id="demo2">
+        <div class="container">
+            <img src="../../HTML/images/workplace.jpg" alt="Laptop image" id="demo3">
+            <div class="center">Centered</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="../../HTML/images/workplace.jpg" alt="5 Terre" class="polaimage">
+            <div class="container1">
+                <p>Cinque Terre</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+p {
+    border: 10px solid transparent;
+    padding: 15px;
+    margin-right: 1200px;
+    border-image: url(../../HTML/images/workplace.jpg) 30% round;
+}
