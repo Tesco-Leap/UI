@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        The HTML picture element allows you to display different pictures for different devices or screen sizes.
+        <!-- 1. Bandwidth
+            If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+            2. Format Support
+            Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. -->
+        <picture>
+            <source media="(min-width: 650px)" srcset="./images/tesco.jpeg">
+            <source media="(min-width: 465px)" srcset="./images/workplace.jpg">
+            <img src="./images/tesco.jpeg">
+        </picture>
+    </body>
+</html>

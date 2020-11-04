@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url('https://www.w3schools.com/html/img_girl.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                /* background-size: cover; */
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://image.shutterstock.com/image-illustration/software-web-development-programming-concept-260nw-1291402780.jpg" alt="Softwares" width="500" height="600">
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+            <img src="./images/tesco.jpeg" alt="Tesco" style="float:right;width:42px;height:42px;">
+            The image will float to the right of the text.
+        </p>
+        <br>
+        <br>
+        <p style="text-align: right;">
+            <img src="./images/tesco.jpeg" alt="Tesco" style="float:left;width:42px;height:42px;">
+            The image will float to the left of the text.
+        </p>
+
+        <br>
+        <br>
+        <h2>Example of Image Map</h2>
+        <img src="./images/workplace.jpg" alt="Workplace" usemap="#workmap">
+    
+        <map name="workmap">
+            <area shape="rect" coords="34, 44, 270, 350" onclick="laptopClicked()">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" onclick="phoneClicked()">
+            <area shape="circle" coords="337,300,44" onclick="coffeeClicked()">
+        </map>
+
+    </body>
+    <script>
+        function coffeeClicked() {
+          alert("You clicked the coffee cup!");
+        }
+        function laptopClicked() {
+          alert("You clicked the laptop!");
+        }
+        function phoneClicked() {
+          alert("You clicked the phone!");
+        }
+    </script>
+</html>
