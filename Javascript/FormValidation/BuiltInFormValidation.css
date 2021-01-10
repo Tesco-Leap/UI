@@ -1,0 +1,19 @@
+div {
+  margin: 30px;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+#demo {
+  color: red;
+}
+
+/* input:invalid {
+  border: 2px dashed red;
+} */
+
+/* input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+} */
