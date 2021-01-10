@@ -1,44 +1,46 @@
+//Intialize a json
 const json = '{"result":true, "count":42}';
+
+// convert to JS object
 const obj = JSON.parse(json);
 
+// JS Objects methods to access value of certain key
 console.log(obj.count);
 console.log(obj["count"]);
-
 console.log(obj.result);
 
 function demo(key, value) {
-    return typeof value === 'number'
-    ? value * 2
-    : value;
+  return typeof value === "number" ? value * 2 : value;
 }
 
 const obj2 = JSON.parse('{"p": 5}', (key, value) =>
-  typeof value === 'number'
-    ? value * 2
-    : value 
+  typeof value === "number" ? value * 2 : value
 );
 
 const obj3 = JSON.parse('{"p": 5}', demo);
 
 console.log(obj3);
 
-// JSON.parse() does not allow single quotes
-
+// JSON.parse() does not allow single quotes in JSON Key
 
 // The JSON.stringify() method converts a JavaScript object or value to a JSON string,
 console.log(JSON.stringify({ x: 5, y: 6 }));
 
 function replacer(key, value) {
-    if (typeof value === 'string') {
-      return undefined;
-    }
-    return value;
+  if (typeof value === "string") {
+    return undefined;
   }
-  
-var foo = {foundation: 'Mozilla', model: 'box', week: 45, transport: 'car', month: 7};
-console.log(JSON.stringify(foo, replacer));
-console.log(JSON.stringify(foo, ['foundation', 'month']));  
+  return value;
+}
 
+var foo = {
+  foundation: "Mozilla",
+  model: "box",
+  week: 45,
+  transport: "car",
+  month: 7,
+};
+console.log(JSON.stringify(foo, replacer));
 
 // JSON Syntax Rules
 // JSON syntax is derived from JavaScript object notation syntax:
@@ -48,8 +50,13 @@ console.log(JSON.stringify(foo, ['foundation', 'month']));
 // Curly braces hold objects
 // Square brackets hold arrays
 
-// 1. In JSON, keys must be strings, written with double quotes:
-// { "name":"John" }
+// In JS key can be Strings, numbers
+// In JSON, keys must be strings, written with double quotes:
+const objX = { 5: 6 };
+console.log(objX);
+
+// This will convert number to string
+console.log(JSON.stringify(objX));
 
 // Javascript { name:"John" }
 
@@ -63,7 +70,6 @@ console.log(JSON.stringify(foo, ['foundation', 'month']));
 // a boolean                    { "sale":true }
 // null                         { "middlename":null }
 
-
 // In JavaScript values can be all of the above, plus any other valid JavaScript expression, including:
 
 // a function
@@ -74,7 +80,6 @@ console.log(JSON.stringify(foo, ['foundation', 'month']));
 // If you need to include a date, write it as a string.
 // You can convert it back into a date object later:
 
-
 var text = '{ "name":"John", "birth":"1986-12-14", "city":"New York"}';
 var obj4 = JSON.parse(text, function (key, value) {
   if (key == "birth") {
@@ -84,22 +89,20 @@ var obj4 = JSON.parse(text, function (key, value) {
   }
 });
 
-
 // Looping an object
-myObj = { "name":"John", "age":30, "car":null };
+myObj = { name: "John", age: 30, car: null };
 for (x in myObj) {
   console.log(x, myObj[x]);
 }
 
-
-
 // Json arryas
 var myObj2 = {
-    "name":"John",
-    "age":30,
-    "cars":[ "Ford", "BMW", "Fiat" ]
-    }
+  name: "John",
+  age: 30,
+  cars: ["Ford", "BMW", "Fiat"],
+};
 
+// Loopint in an JSON Array Value
 for (i in myObj2.cars) {
-    console.log(myObj2.cars[i]);
+  console.log(myObj2.cars[i]);
 }
